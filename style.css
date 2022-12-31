@@ -96,12 +96,13 @@ button:hover{
 }
 
 @media(max-width: 896px){
+    body{
+        padding-top: 8vh;
+    }
     .container{
         width: 45vh;
         height: 80vh;
     }
-    
-
     .content{
         font-size: 20px;
         height: 30%;
