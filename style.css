@@ -97,9 +97,10 @@ button:hover{
 
 @media(max-width: 896px){
     .container{
-        width: 40vh;
-        height: 70vh;
+        width: 50vh;
+        height: 80vh;
     }
+    
 
     .content{
         font-size: 20px;
@@ -110,6 +111,10 @@ button:hover{
     }
     button{
         width: 7rem;
+        height: 2rem;
+    }
+    #input-pokemon{
+        width: 70%;
         height: 2rem;
     }
     #pokemon-name{

@@ -1,7 +1,9 @@
 async function getPokemon(){
     try{
-    const pokemon = document.getElementById('input-pokemon')
-    const url = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemon.value}`)
+    const pokemon = document.getElementById('input-pokemon') //pega o valor do input com id input-pokemon
+    const pokemonMinusculo = pokemon.value.toLowerCase() //transforma o valor do input em minusculo
+    const url = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonMinusculo}`) //faz a requisição para a api do pokemon
+    console.log(pokemon.value)
     const pokemonName = url.data.name
     const pokemonMove = url.data.moves
     const pokemonType = url.data.types
