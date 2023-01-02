@@ -72,3 +72,12 @@ async function getPokemon(){
     
 }
 
+document.addEventListener("keypress", function(e) { //adiciona um evento de tecla pressionada
+    if(e.key === 'Enter') {
+    
+        var btn = document.querySelector("#button");
+      
+      btn.click();
+    
+    }
+  });
